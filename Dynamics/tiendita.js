@@ -66,9 +66,9 @@ for(let i = 0;i<articulos.length;i++){
     
     btn.addEventListener("click",()=>{
         t+= articulos[i].getDn();
-        total.textContent = t.toString();
+        total.textContent = "$"+t.toString();
 
-        lista.textContent = "X"+c+" "+ articulos[i].getName();
+        lista.innerHTML += `<ul>X${c} ${articulos[i].getName()}</ul>`
         c++;
     });
 
